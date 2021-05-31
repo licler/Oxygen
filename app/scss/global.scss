@@ -1,61 +1,90 @@
 //Обнуления///////////////////////////////////////////////////////////////////////////////////////////////
-html{
+html {
 	box-sizing: border-box;
 	height: 100%;
 	min-width: $minWidth;
 }
-*, *::before, *::after{
+
+*,
+*::before,
+*::after {
 	box-sizing: inherit;
 }
-body{
+
+html,
+body {
 	height: 100%;
-	min-width: $minWidth;
-	line-height: 1;
-	font-family: $fontFamily;
-	color: $text;
+	position: relative;
 }
-h1, h2, h3, h4, h5, h6, p{
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
 	font-weight: inherit;
 	line-height: inherit;
 	font-size: inherit;
 }
-textarea{
+
+textarea {
 	resize: none;
 }
-input, button, textarea{
+
+input,
+button,
+textarea {
 	font-family: inherit;
 }
-button{
+
+button {
 	cursor: pointer;
 }
-a{
+
+a {
 	display: inline-block;
 	text-decoration: none;
 	color: inherit;
 }
-ul, li{
+
+ul,
+li {
 	margin: 0;
-    padding: 0;
-    list-style: none;
+	padding: 0;
+	list-style: none;
 }
 
 //Прижимаем футер к низу///////////////////////////////////////////////////////////////////////////////////////////////
-.wrapper{
+.wrapper {
 	display: flex;
 	flex-direction: column;
 	min-height: 100%;
 	overflow-x: hidden;
 }
-.content{
+
+.main {
 	flex: 1 0 auto;
 }
-.footer{
+
+.footer {
 	flex: 0 0 auto;
 }
 
 //Дежурные классы///////////////////////////////////////////////////////////////////////////////////////////////
 .container {
-    max-width: 1200px;
-    padding: 0 10px;
-    margin: 0 auto;
+	max-width: 1440px;
+	padding: 0 50px;
+	margin: 0 auto;
+}
+
+body {
+	height: 100%;
+	min-width: $minWidth;
+	line-height: 27px;
+	font-family: $fontFamily;
+	color: $text;
+	font-size: 14px;
+	font-weight: 300;
 }
