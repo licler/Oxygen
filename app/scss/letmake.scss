@@ -1,0 +1,23 @@
+// start letmake
+.letmake {
+    margin: 25px 0 139px;
+    background-color: #F6F8FA;
+    &__inner {
+        display: flex;
+    }
+    &__content {
+        margin-left: 100px;
+    }
+    &__title {
+        width: 430px;
+    }
+    .title::before {
+        top: 160px;
+        margin-bottom: 67px;
+        
+        
+    }
+}
+
+
+// end letmake

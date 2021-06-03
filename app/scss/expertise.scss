@@ -1,0 +1,59 @@
+// start expertise
+.expertise {
+  margin: 141px 0 166px;
+  &__content {
+    display: flex;
+    margin-bottom: 110px;
+  }
+  &__item-line {
+    height: 2px;
+    background-color: #1d1d1d;
+    margin-top: -1px;
+  }
+  &__item-num--bran {
+    margin-right: 10px;
+  }
+  &__item-num--des {
+    margin-right: 45px;
+  }
+  &__item-num--dev {
+    margin-right: 28px;
+  }
+  &__box {
+    max-width: 770px;
+    margin-left: 30px;
+  }
+  &__item-box {
+    border-top: 2px solid #f0f0f0;
+    width: 370px;
+    display: flex;
+    justify-content: space-between;
+  }
+  &__wrapper {
+    display: flex;
+  }
+  &__media {
+    display: flex;
+    margin-right: 30px;
+  }
+  &__media-box {
+    margin-right: 35px;
+  }
+  &__media-images {
+    margin-top: 24px;
+  }
+  &__media-content {
+    max-width: 285px;
+  }
+  &__media-title {
+    font-family: "Raleway-VariableFont_wght";
+    color: #333333;
+    font-size: 14px;
+    line-height: 20px;
+  }
+  &__media-text {
+    color: #777777;
+  }
+}
+
+// end expertise

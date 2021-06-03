@@ -243,4 +243,161 @@ body {
 
 .previous__btn {
   margin-top: 100px;
+  cursor: pointer;
+}
+
+.about {
+  background-color: #f6f8fa;
+  padding: 143px 0;
+}
+
+.about__inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.about__content {
+  max-width: 770px;
+  margin-left: 133px;
+}
+
+.about__title {
+  width: 344px;
+}
+
+.title {
+  font-size: 48px;
+  line-height: 78px;
+  font-family: "Montserrat-Bold";
+  position: relative;
+  padding-bottom: 14px;
+}
+
+.title::before {
+  content: "";
+  position: absolute;
+  width: 64px;
+  height: 4px;
+  background-color: #FCBB08;
+  left: 0;
+  top: 90px;
+}
+
+.expertise {
+  margin: 141px 0 166px;
+}
+
+.expertise__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 110px;
+}
+
+.expertise__item-line {
+  height: 2px;
+  background-color: #1d1d1d;
+  margin-top: -1px;
+}
+
+.expertise__item-num--bran {
+  margin-right: 10px;
+}
+
+.expertise__item-num--des {
+  margin-right: 45px;
+}
+
+.expertise__item-num--dev {
+  margin-right: 28px;
+}
+
+.expertise__box {
+  max-width: 770px;
+  margin-left: 30px;
+}
+
+.expertise__item-box {
+  border-top: 2px solid #f0f0f0;
+  width: 370px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.expertise__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.expertise__media {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-right: 30px;
+}
+
+.expertise__media-box {
+  margin-right: 35px;
+}
+
+.expertise__media-images {
+  margin-top: 24px;
+}
+
+.expertise__media-content {
+  max-width: 285px;
+}
+
+.expertise__media-title {
+  font-family: "Raleway-VariableFont_wght";
+  color: #333333;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.expertise__media-text {
+  color: #777777;
+}
+
+.letmake {
+  margin: 25px 0 139px;
+  background-color: #F6F8FA;
+}
+
+.letmake__inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.letmake__content {
+  margin-left: 100px;
+}
+
+.letmake__title {
+  width: 430px;
+}
+
+.letmake .title::before {
+  top: 160px;
+  margin-bottom: 67px;
+}
+
+.portfolio__inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  height: 94px;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
