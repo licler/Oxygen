@@ -400,4 +400,46 @@ body {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  margin-bottom: 103px;
+}
+
+.portfolio__items {
+  margin: 0 auto;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto auto auto auto;
+  grid-template-columns: auto auto auto auto;
+  -ms-grid-rows: auto auto auto auto;
+  grid-template-rows: auto auto auto auto;
+  grid-gap: 23px;
+  width: 100%;
+}
+
+.portfolio__item {
+  position: relative;
+  height: auto;
+  width: auto;
+}
+
+.portfolio__item-content {
+  position: absolute;
+  right: auto;
+  left: auto;
+  top: 0;
+}
+
+.portfolio__item:nth-child(7) {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  grid-column: 1/2;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 1;
+  grid-row: 1/2;
+}
+
+.portfolio__item-images {
+  -o-object-fit: cover;
+  object-fit: cover;
+  width: 100%;
+  max-height: 100%;
 }
