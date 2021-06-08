@@ -1,11 +1,21 @@
 // start portfolio
 .portfolio {
+  padding: 139px 0 0;
   &__inner {
     display: flex;
     justify-content: space-between;
     height: 94px;
     align-items: center;
     margin-bottom: 103px;
+  }
+  &__title {
+    padding-left: 135px;
+    &::before {
+      left: 135px;
+    }
+  }
+  &__box {
+    margin-right: 130px;
   }
   &__items {
     margin: 0 auto;
@@ -14,6 +24,7 @@
     grid-template-rows: auto auto auto auto;
     grid-gap: 23px;
     width: 100%;
+    padding-bottom: 70px;
   }
 
   &__item {

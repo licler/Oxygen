@@ -1,6 +1,9 @@
 // start expertise
 .expertise {
-  margin: 141px 0 166px;
+  padding: 141px 0 131px;
+  &__inner {
+    padding: 0 110px;
+  }
   &__content {
     display: flex;
     margin-bottom: 110px;
@@ -50,6 +53,7 @@
     color: #333333;
     font-size: 14px;
     line-height: 20px;
+    letter-spacing: 4.29px;
   }
   &__media-text {
     color: #777777;

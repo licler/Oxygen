@@ -1,15 +1,17 @@
 // start letmake
 .letmake {
-    margin: 25px 0 139px;
     background-color: #F6F8FA;
     &__inner {
         display: flex;
     }
     &__content {
-        margin-left: 100px;
+        margin-left: 130px;
     }
     &__title {
         width: 430px;
+    }
+    &__box {
+        max-width: 470px;
     }
     .title::before {
         top: 160px;
