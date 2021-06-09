@@ -4,7 +4,7 @@
   &__box {
     background-image: url("../img/content/video-bg.jpg");
     height: 324px;
-    width: 1440px;
+    max-width: 1440px;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: top center;

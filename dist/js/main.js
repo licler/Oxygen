@@ -1,20 +1,25 @@
 $(function(){
-	
-	var Animation = function() {
-        var hFrom = $(window).scrollTop();
-        var hTo = $(window).scrollTop() + ($(window).height() / 3);
-        if ($(".numpage__items").offset().top > hFrom && $(".numpage__items").offset().top < hTo){
-            $('.numpage__item-num span').delay(500).spincrement({
-                thousandSeparator: "",
-                duration: 3000
-            });
-        }
-    };
-    $(window).scroll(function() {
-        Animation();
+	//  начало счетчик
+	$('.numpage__item-num').each(function () {
+        $(this).prop('Counter', 0).animate({
+                Counter: $(this).data('value')
+            }, {
+            duration: 5000,
+            easing: 'swing',
+            step: function (now) {                      
+                $(this).text(Math.ceil(this.Counter));
+            }
+        });
     });
-    Animation();
 
+    $('.people__slider').slick({	
+        arrows: true,
+        prevArrow: '<button type="button" class="slick-btn slick-prev"><img src="img/content/back.svg" alt="images"></button>',
+        nextArrow: '<button type="button" class="slick-btn slick-next"><img src="img/content/next.svg" alt="images"></button>',
+        dots: true
+      });
+
+// конец счетчик
 
 
 

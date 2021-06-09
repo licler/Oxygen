@@ -551,7 +551,7 @@ body {
 .previous-video__box {
   background-image: url("../img/content/video-bg.jpg");
   height: 324px;
-  width: 1440px;
+  max-width: 1440px;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: top center;
@@ -591,4 +591,203 @@ body {
   line-height: 19px;
   font-family: "OpenSans-Regular";
   color: #00B2A0;
+}
+
+.people {
+  padding: 305px 0 114px;
+  background-color: #f6f8fa;
+}
+
+.people__item {
+  max-width: 705px;
+  min-height: 208px;
+}
+
+.people__title {
+  font-size: 40px;
+  line-height: 52px;
+  font-family: "Montserrat-Bold";
+  color: #242121;
+  margin-bottom: 32px;
+}
+
+.people__text {
+  max-width: 559px;
+  color: #777777;
+  margin-bottom: 197px;
+}
+
+.people .slick-btn {
+  position: relative;
+  border: none;
+  background-color: transparent;
+}
+
+.people .slick-next {
+  content: "";
+  position: absolute;
+  top: 120px;
+  right: 10px;
+}
+
+.people .slick-prev {
+  content: "";
+  position: absolute;
+  top: 120px;
+  left: -85px;
+}
+
+.people .slick-dots {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.people .slick-dots li {
+  margin-right: 15px;
+}
+
+.people .slick-dots li button {
+  width: 6px;
+  height: 6px;
+  font-size: 0;
+  border-radius: 50%;
+  padding: 0;
+  outline: none;
+  border: none;
+  background-color: #242121;
+  opacity: 0.4;
+}
+
+.people .slick-dots .slick-active button {
+  width: 10px;
+  height: 10px;
+  background-color: #242121;
+}
+
+.team {
+  padding: 120px 0 164px;
+}
+
+.team__title {
+  padding-bottom: 102px;
+}
+
+.team__items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.team__item {
+  text-align: center;
+}
+
+.team__item-name {
+  margin-top: 35px;
+  margin-bottom: 12px;
+  line-height: 17px;
+  font-family: "Montserrat-Bold";
+  color: #242121;
+}
+
+.team__item-profession {
+  font-size: 12px;
+  line-height: 16px;
+  color: #C2C2C2;
+}
+
+.pricing {
+  padding: 144px 0 162px;
+  background-color: #f6f8fa;
+}
+
+.pricing__title {
+  margin-bottom: 91px;
+}
+
+.pricing__items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.pricing__item {
+  max-width: 370px;
+  width: 100%;
+  background-color: #fff;
+  padding: 0 25px 24px;
+  text-align: center;
+}
+
+.pricing__item-title {
+  font-size: 16px;
+  line-height: 21px;
+  font-family: "OpenSans-Bold";
+  text-align: left;
+}
+
+.pricing__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  position: relative;
+  margin-bottom: 51px;
+}
+
+.pricing__item-cur {
+  font-size: 40px;
+  line-height: 54px;
+  color: #242121;
+  position: absolute;
+  top: 15px;
+  left: 88px;
+}
+
+.pricing__item-price {
+  font-size: 80px;
+  line-height: 108px;
+  color: #242121;
+}
+
+.pricing__item-data {
+  ont-size: 20px;
+  line-height: 27px;
+  color: #242121;
+  position: absolute;
+  bottom: 15px;
+  right: 88px;
+}
+
+.pricing__list {
+  margin: 0 auto;
+  text-align: center;
+  font-size: 16px;
+  line-height: 21px;
+  color: #242121;
+}
+
+.pricing__posstion {
+  margin-bottom: 30px;
+}
+
+.pricing__btn {
+  text-align: center;
+  border: none;
+  background-color: transparent;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 17px;
+  letter-spacing: 1.2px;
+  font-family: "Montserrat-Bold";
+  margin-bottom: 30px;
 }
