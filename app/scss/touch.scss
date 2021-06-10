@@ -1,0 +1,62 @@
+// start touch
+.touch {
+  padding: 292px 0 0;
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__title {
+    margin-top: 145px;
+    margin-bottom: 94px;
+  }
+
+  &__form {
+    display: flex;
+    flex-direction: column;
+  }
+  &__input {
+    width: 569px;
+    border: none;
+    border-bottom: 2px solid $text;
+    margin-bottom: 32px;
+    outline: none;
+    padding: 16px 0;
+    &::placeholder {
+      font-size: 12px;
+      line-height: 20px;
+      color: #b8b8b8;
+      letter-spacing: 3.71px;
+    }
+  }
+  &__textarea {
+    height: 156px;
+    margin-top: 21px;
+    border: none;
+    border-bottom: 2px solid $text;
+    margin-bottom: 40px;
+    outline: none;
+    resize: none;
+    &::placeholder {
+      font-size: 12px;
+      line-height: 20px;
+      color: #b8b8b8;
+      margin-bottom: 36px;
+      letter-spacing: 3.71px;
+    }
+  }
+  &__btn {
+    max-width: 230px;
+    background-color: $title;
+    border: none;
+    outline: none;
+    color: #fff;
+    padding: 17px 15px;
+    text-align: center;
+    font-size: 11px;
+    line-height: 13px;
+    letter-spacing: 2px;
+    font-family: "Montserrat-Bold";
+  }
+}
+
+// end touch

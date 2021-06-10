@@ -11,6 +11,9 @@ $(function(){
             }
         });
     });
+  
+// конец счетчик
+ 
 
     $('.people__slider').slick({	
         arrows: true,
@@ -19,7 +22,18 @@ $(function(){
         dots: true
       });
 
-// конец счетчик
+
+
+ 
+
+    $(".footer__btn").click(function(){
+    $(".footer__info-box").slideUp('1000');
+    });
+
+    // $(".footer__btn").click(function(){
+    // $(".footer__info-box").slideDown('1000');  
+    // });
+    
 
 
 

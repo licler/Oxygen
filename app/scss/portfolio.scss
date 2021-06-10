@@ -34,10 +34,12 @@
     transition: all .7s;
   }
   &__item-content {
+    max-width: 135px;
     position: absolute;
     top: 50%;
-    transform: translate(80%, -50%);
     text-align: center;
+    left: 50%;
+    transform: translate(-50%, -50%);
 
   }
   &__item-name {
