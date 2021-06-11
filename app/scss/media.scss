@@ -1,0 +1,155 @@
+// start media
+
+// start header
+@media (max-width: 700px) {
+  .header__btn {
+    display: block;
+    cursor: pointer;
+  }
+  .header__list {
+    display: block;
+    position: absolute;
+    top: 76px;
+    left: 0;
+    right: 0;
+    width: 100%;
+    background-color: #fff;
+    padding: 0 10px;
+  }
+  .header__item {
+   text-align: center;
+    display: block;
+    margin-left: 0;
+    
+  }
+  .header__item +  .header__item {
+    margin-left: 0;
+    border-bottom: 1px solid #40191926;
+    padding: 10px 0;
+  }
+  .header__item:first-child {
+    border-bottom: 1px solid #40191926;
+    padding: 10px 0;
+  }
+}
+@media (min-width: 701px) {
+    .header__list {
+        display: block !important;
+    }
+}
+@media (max-width: 480px) {
+    .previous__title {
+        font-size: 70px;
+    }
+}
+@media (max-width: 360px) {
+    .previous__title {
+        font-size: 60px;
+    }
+}
+// end header
+
+// start about
+@media (max-width: 1250px) {
+    .about__inner {
+        flex-wrap: wrap;
+        padding-left: 0;
+        justify-content: center;
+    }
+    .about__content {
+        margin-left: 0;
+    }
+}
+// end about
+
+// start expertise
+@media (max-width: 1100px) {
+    .expertise__inner {
+        padding: 0;
+    }
+
+    .expertise__content {
+       flex-wrap: wrap;
+    }
+    .expertise__box {
+        margin-left: 0;
+    }
+}
+@media (max-width: 820px) {
+    .expertise__wrapper {
+        flex-wrap: wrap;
+    }
+    .expertise__media {
+        margin-bottom: 20px;
+    }
+    .expertise__media-content--market {
+        margin-left: 16px;
+    }
+}
+@media (max-width: 425px) {
+    .expertise__title {
+        font-size: 40px;
+    }
+    .expertise__item-box {
+        width: 300px;
+    }
+}
+@media (max-width: 360px) {
+    .expertise__title {
+        font-size: 35px;
+    }
+    .expertise__item-box {
+        width: 250px;
+    }
+}
+
+
+// end expertise
+// start letmake
+@media (max-width: 1320px) {
+    .letmake__inner {
+        flex-wrap: wrap;
+    }
+    .letmake__content {
+        margin-left: 50px;
+        margin-bottom: 50px;
+    }
+    .letmake__images {
+        max-width: 705px;
+        width: 100%;
+    }
+}
+
+@media (max-width: 550px) {
+    .letmake__content {
+        margin-left: 0;
+    }
+}
+@media (max-width: 480px) {
+    .letmake__text {
+        max-width: 350px;
+        width: 100%;
+    }
+}
+@media (max-width: 400px) {
+    .letmake__text {
+        max-width: 280px;
+    }
+    .letmake__title  {
+        font-size: 24px;
+    }
+}
+
+// end letmake
+
+// start portfolio
+@media (max-width: 1100px) {
+    .portfolio__inner {
+        display: block;
+}
+}
+
+
+// end portfolio
+
+// end media

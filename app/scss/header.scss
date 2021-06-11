@@ -1,59 +1,67 @@
 // start header
 .header {
-    &__top {
-        display: flex;
-        justify-content: space-between;
-        height: 94px;
-        align-items: center;
-    }
-    &__logo {
-        margin-left: -60px;
-    }
-    &__list {
-        display: flex;
-        justify-content: space-between;
-    }
-    &__item {
-        margin-left: 44px;
-        font-size: 12px;
-        font-family: "Raleway-VariableFont_wght";
-        line-height: 14px;
-    }
+  &__top {
+    display: flex;
+    justify-content: space-between;
+    height: 94px;
+    align-items: center;
+  }
+  &__logo {
+    margin-left: 0px;
+  }
+  &__list {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__item {
+    margin-left: 44px;
+    font-size: 12px;
+    font-family: "Raleway-VariableFont_wght";
+    line-height: 14px;
+  }
+}
+.header__btn {
+  width: 30px;
+  display: none;
+}
+.header__btn-row {
+    width: 100%;
+    background-color: #000;
+    height: 4px;
+    margin-bottom: 4px;
 }
 .previous {
-        background-position: top center;
-        background-repeat: no-repeat;
-        background-size: cover;
-        width: 100%;
-        height: 752px;
-        font-family: "Montserrat-Bold";
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    &__items {
-        width: 440px;
-        margin: 0 auto;
-        text-align: center;
-    }
-    &__title {
-        
-        font-size: 100px;
-        line-height: 121px;
-        color: #fff;
-        width: 440px;
-    }
-    &__text {
-        margin-top: 18px;
-        font-size: 16px;
-        line-height: 19px;
-        color: $line;
-        width: 440px;
-    }
-    &__btn {
-        margin-top: 100px;
-        cursor: pointer;
-    }
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 752px;
+  font-family: "Montserrat-Bold";
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  &__items {
+    width: 440px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  &__title {
+    font-size: 100px;
+    line-height: 121px;
+    color: #fff;
+    width: 440px;
+  }
+  &__text {
+    margin-top: 18px;
+    font-size: 16px;
+    line-height: 19px;
+    color: $line;
+    width: 440px;
+  }
+  &__btn {
+    margin-top: 100px;
+    cursor: pointer;
+  }
 }
-
 
 // end header

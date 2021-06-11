@@ -22,29 +22,19 @@ $(function(){
         dots: true
       });
 
-
-
- 
+   
 
     $(".footer__btn").click(function(){
-    $(".footer__info-box").slideUp('1000');
+    $(".footer__info-box").fadeIn('');
+    $(".footer__btn").addClass('footer__btn-up');
     });
-
-    // $(".footer__btn").click(function(){
-    // $(".footer__info-box").slideDown('1000');  
-    // });
     
+  
 
 
-
-
-
-
-
-
-
-
-
+    $('.header__btn').on('click', function(){
+        $('.header__list'). slideToggle();
+      });
 
 
 	
