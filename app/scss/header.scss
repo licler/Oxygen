@@ -9,27 +9,40 @@
   &__logo {
     margin-left: 0px;
   }
-  &__list {
-    display: flex;
-    justify-content: space-between;
-  }
+  // &__list {
+  //   display: flex;
+  //   justify-content: space-between;
+  // }
   &__item {
     margin-left: 44px;
     font-size: 12px;
     font-family: "Raleway-VariableFont_wght";
     line-height: 14px;
+    display: inline-block;
+    letter-spacing: 0.6px;
   }
 }
 .header__btn {
   width: 30px;
   display: none;
 }
-.header__btn-row {
-    width: 100%;
-    background-color: #000;
-    height: 4px;
-    margin-bottom: 4px;
+.header__item-link--active {
+  position: relative;
+  padding-bottom: 10px;
+  &::before {
+    content: "";
+    position: absolute;
+    width: 50px;
+    height: 2px;
+    background-color: $line;
+    bottom: 0;
+    left: -6px;
+    right: 0;
+    margin: 0 auto;
+    text-align: center;
+  }
 }
+
 .previous {
   background-position: top center;
   background-repeat: no-repeat;

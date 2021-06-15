@@ -19,7 +19,17 @@ $(function(){
         arrows: true,
         prevArrow: '<button type="button" class="slick-btn slick-prev"><img src="img/content/back.svg" alt="images"></button>',
         nextArrow: '<button type="button" class="slick-btn slick-next"><img src="img/content/next.svg" alt="images"></button>',
-        dots: true
+        dots: true,
+        responsive: [
+            {
+              breakpoint: 860,
+              settings: {
+                infinite: true,
+                dots: false,
+                arrows: false
+              }
+            }
+        ]
       });
 
    
