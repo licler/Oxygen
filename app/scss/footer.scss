@@ -5,6 +5,7 @@
   &__inner {
     margin: 0 auto;
     text-align: center;
+    padding: 0 20px;
   }
   &__logo {
     text-align: center;
@@ -25,17 +26,18 @@
     }
   }
   &__list {
-    display: flex;
     color: #fff;
-    margin-top: 74px;
-    justify-content: center;
+    // margin-top: 74px;
     font-family: "Montserrat-Light";
     font-size: 12px;
     letter-spacing: 4px;
-    margin-bottom: 65px;
+    // margin-bottom: 65px;
+    margin: 74px auto 65px;
+  padding: 0 10px;
   }
   &__item {
     margin-right: 28px;
+    display: inline-block;
   }
   &__info {
     text-align: center;

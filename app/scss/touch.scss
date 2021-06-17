@@ -9,10 +9,14 @@
     margin-top: 145px;
     margin-bottom: 94px;
   }
+  &__content {
+    padding: 0 10px;
+  }
 
   &__form {
     display: flex;
     flex-direction: column;
+    width: 100%;
   }
   &__input {
     width: 569px;
@@ -56,6 +60,12 @@
     line-height: 13px;
     letter-spacing: 2px;
     font-family: "Montserrat-Bold";
+  }
+  &__map-inner {
+    iframe {
+      width: 635px;
+      height: 896px;
+    }
   }
 }
 

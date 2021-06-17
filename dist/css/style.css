@@ -411,13 +411,13 @@ body {
   width: 430px;
 }
 
-.letmake__box {
-  max-width: 470px;
-}
-
-.letmake .title::before {
+.letmake__title::before {
   top: 160px;
   margin-bottom: 67px;
+}
+
+.letmake__box {
+  max-width: 470px;
 }
 
 .portfolio {
@@ -750,9 +750,14 @@ body {
   max-width: 370px;
   width: 100%;
   background-color: #fff;
-  padding: 0 10px;
+  padding: 0 25px;
   margin: 0 10px;
   text-align: center;
+}
+
+.pricing__item:hover {
+  -webkit-box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.08);
+  box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.08);
 }
 
 .pricing__item-title {
@@ -840,6 +845,10 @@ body {
   margin-bottom: 94px;
 }
 
+.touch__content {
+  padding: 0 10px;
+}
+
 .touch__form {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -848,6 +857,7 @@ body {
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
+  width: 100%;
 }
 
 .touch__input {
@@ -958,6 +968,11 @@ body {
   font-family: "Montserrat-Bold";
 }
 
+.touch__map-inner iframe {
+  width: 635px;
+  height: 896px;
+}
+
 .footer {
   background-color: #373A39;
   padding: 110px 0 0;
@@ -966,6 +981,7 @@ body {
 .footer__inner {
   margin: 0 auto;
   text-align: center;
+  padding: 0 20px;
 }
 
 .footer__logo {
@@ -989,22 +1005,17 @@ body {
 }
 
 .footer__list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   color: #fff;
-  margin-top: 74px;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
   font-family: "Montserrat-Light";
   font-size: 12px;
   letter-spacing: 4px;
-  margin-bottom: 65px;
+  margin: 74px auto 65px;
+  padding: 0 10px;
 }
 
 .footer__item {
   margin-right: 28px;
+  display: inline-block;
 }
 
 .footer__info {
@@ -1068,6 +1079,24 @@ body {
   }
 }
 
+@media (max-width: 1300px) {
+  .touch {
+    padding: 100px 0;
+  }
+
+  .touch__inner {
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+  }
+
+  .touch__map {
+    margin-top: 80px;
+  }
+}
+
 @media (max-width: 1250px) {
   .about__inner {
     -ms-flex-wrap: wrap;
@@ -1114,6 +1143,10 @@ body {
 
   .team__title::before {
     left: 52px;
+  }
+
+  .team {
+    padding: 100px 0;
   }
 
   .pricing {
@@ -1231,6 +1264,19 @@ body {
   }
 }
 
+@media (max-width: 830px) {
+  .footer__item {
+    margin-bottom: 10px;
+    margin-right: 5px;
+    margin-left: 5px;
+  }
+
+  .footer__list {
+    margin: 74px auto;
+    text-align: center;
+  }
+}
+
 @media (max-width: 820px) {
   .expertise {
     padding: 80px 0;
@@ -1248,11 +1294,44 @@ body {
   .expertise__media-content--market {
     margin-left: 16px;
   }
+
+  .people__item {
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+
+  .people__title {
+    font-size: 37px;
+  }
+
+  .people__text {
+    max-width: 705px;
+  }
 }
 
 @media (max-width: 760px) {
   .about {
     padding: 65px 0;
+  }
+}
+
+@media (max-width: 731px) {
+  .expertise__wrapper {
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+  }
+
+  .letmake__title {
+    font-size: 44px;
+  }
+
+  .letmake__title::before {
+    top: 95px;
+  }
+
+  .letmake__content {
+    margin: 0 auto 50px;
   }
 }
 
@@ -1296,6 +1375,71 @@ body {
   .header__item:first-child {
     border-bottom: 1px solid #40191926;
     padding: 10px 0;
+  }
+}
+
+@media (max-width: 695px) {
+  .expertise__wrapper {
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+  }
+
+  .letmake__content {
+    margin: 0 auto 50px;
+  }
+}
+
+@media (max-width: 675px) {
+  .touch__map-inner iframe {
+    max-width: 635px;
+    width: 100%;
+    height: 400px;
+  }
+
+  .touch__title {
+    margin-top: 10px;
+  }
+}
+
+@media (max-width: 650px) {
+  .touch__input {
+    width: 100%;
+  }
+
+  .touch__title {
+    font-size: 35px;
+  }
+
+  .touch__input::-webkit-input-placeholder, .touch__textarea::-webkit-input-placeholder {
+    font-size: 10px;
+  }
+
+  .touch__input::-moz-placeholder, .touch__textarea::-moz-placeholder {
+    font-size: 10px;
+  }
+
+  .touch__input:-ms-input-placeholder, .touch__textarea:-ms-input-placeholder {
+    font-size: 10px;
+  }
+
+  .touch__input::-ms-input-placeholder, .touch__textarea::-ms-input-placeholder {
+    font-size: 10px;
+  }
+
+  .touch__input::placeholder,
+  .touch__textarea::placeholder {
+    font-size: 10px;
+  }
+}
+
+@media (max-width: 640px) {
+  .letmake__title {
+    font-size: 44px;
+  }
+
+  .letmake__title::before {
+    top: 95px;
   }
 }
 

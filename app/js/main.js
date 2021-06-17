@@ -12,6 +12,10 @@ $(function(){
         });
     });
   
+
+ 
+
+
 // конец счетчик
  
 
@@ -45,6 +49,10 @@ $(function(){
     $('.header__btn').on('click', function(){
         $('.header__list'). slideToggle();
       });
+
+   
+      new WOW().init();
+
 
 
 	

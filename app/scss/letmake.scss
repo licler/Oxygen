@@ -9,16 +9,15 @@
     }
     &__title {
         width: 430px;
+    &::before {
+        top: 160px;
+        margin-bottom: 67px;
     }
+}
     &__box {
         max-width: 470px;
     }
-    .title::before {
-        top: 160px;
-        margin-bottom: 67px;
-        
-        
-    }
+   
 }
 
 
