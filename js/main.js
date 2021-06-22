@@ -12,8 +12,7 @@ $(function(){
         });
     });
   
-
- 
+  
 
 
 // конец счетчик
@@ -38,12 +37,17 @@ $(function(){
 
    
 
-    $(".footer__btn").click(function(){
-    $(".footer__info-box").fadeIn('');
-    $(".footer__btn").addClass('footer__btn-up');
+    $('.footer__btn').on('click', function(){
+      // $('.footer__btn').addClass('footer__btn--active');
+    $('.footer__info-box').slideToggle('');
+    $('.footer__btn-images').rotate({animateTo:180});
     });
-    
   
+   
+    
+       
+
+
 
 
     $('.header__btn').on('click', function(){
