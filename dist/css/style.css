@@ -240,6 +240,7 @@ body {
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
+  margin-top: 94px;
 }
 
 .previous__items {
@@ -266,6 +267,14 @@ body {
 .previous__btn {
   margin-top: 100px;
   cursor: pointer;
+}
+
+.header {
+  width: 100%;
+  height: 94px;
+  position: fixed;
+  background-color: #fef9f6;
+  z-index: 100;
 }
 
 .about {
@@ -1055,6 +1064,22 @@ body {
   padding: 43px;
 }
 
+.up {
+  display: none;
+}
+
+.footer__btn-images {
+  -webkit-transform: rotate(0deg);
+  -ms-transform: rotate(0deg);
+  transform: rotate(0deg);
+}
+
+.footer__btn--active .footer__btn-images {
+  -webkit-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  transform: rotate(180deg);
+}
+
 @media (min-width: 701px) {
   .header__list {
     display: inline-block !important;
@@ -1376,6 +1401,10 @@ body {
     border-bottom: 1px solid #40191926;
     padding: 10px 0;
   }
+
+  .people__title {
+    font-size: 32px;
+  }
 }
 
 @media (max-width: 695px) {
@@ -1461,10 +1490,27 @@ body {
   .numpage__items {
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
   }
 
   .numpage__item-num {
-    font-size: 52px;
+    font-size: 40px;
+    margin-bottom: 10px;
+    line-height: 55px;
+  }
+
+  .numpage__item {
+    padding-right: 20px;
+    padding-left: 20px;
+    padding-bottom: 25px;
+  }
+}
+
+@media (max-width: 505px) {
+  .letmake__title {
+    font-size: 40px;
   }
 }
 
@@ -1492,15 +1538,20 @@ body {
     max-width: 350px;
     width: 100%;
   }
+
+  .letmake__title {
+    font-size: 35px;
+  }
 }
 
 @media (max-width: 460px) {
   .pricing__title {
     font-size: 35px;
+    text-align: left;
   }
 
   .pricing__title::before {
-    left: 53px;
+    left: 10px;
   }
 
   .pricing__item-price {
@@ -1518,6 +1569,12 @@ body {
   .pricing__item-data {
     font-size: 16px;
     right: 88px;
+  }
+}
+
+@media (max-width: 435px) {
+  .letmake__title {
+    font-size: 30px;
   }
 }
 
@@ -1558,6 +1615,17 @@ body {
   .pricing__item-data {
     font-size: 16px;
     right: 80px;
+  }
+}
+
+@media (max-width: 410px) {
+  .about__title {
+    font-size: 45px;
+    text-align: left;
+  }
+
+  .about__title::before {
+    left: 0px;
   }
 }
 

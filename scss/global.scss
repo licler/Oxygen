@@ -1,0 +1,95 @@
+//Обнуления///////////////////////////////////////////////////////////////////////////////////////////////
+html {
+	box-sizing: border-box;
+	height: 100%;
+	min-width: $minWidth;
+}
+
+*,
+*::before,
+*::after {
+	box-sizing: inherit;
+}
+
+html,
+body {
+	height: 100%;
+	position: relative;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+	font-weight: inherit;
+	line-height: inherit;
+	font-size: inherit;
+}
+
+textarea {
+	resize: none;
+}
+
+input,
+button,
+textarea {
+	font-family: inherit;
+}
+
+button {
+	cursor: pointer;
+}
+
+a {
+	display: inline-block;
+	text-decoration: none;
+	color: inherit;
+}
+
+ul,
+li {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+//Прижимаем футер к низу///////////////////////////////////////////////////////////////////////////////////////////////
+.wrapper {
+	display: flex;
+	flex-direction: column;
+	min-height: 100%;
+	overflow-x: hidden;
+}
+
+.main {
+	flex: 1 0 auto;
+}
+
+.footer {
+	flex: 0 0 auto;
+}
+
+//Дежурные классы///////////////////////////////////////////////////////////////////////////////////////////////
+.container {
+	max-width: 1440px;
+	padding: 0 25px;
+	margin: 0 auto;
+}
+.container-fluid {
+	max-width: 1920px;
+	padding: 0 50px;
+	margin: 0 auto;
+}
+
+body {
+	height: 100%;
+	min-width: $minWidth;
+	line-height: 24px;
+	font-family: $fontFamily;
+	color: $text;
+	font-size: 14px;
+	font-weight: 300;
+}
