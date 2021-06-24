@@ -277,6 +277,10 @@ body {
   z-index: 100;
 }
 
+.header__fixed {
+  background-color: #97a292;
+}
+
 .about {
   background-color: #f6f8fa;
   padding: 143px 0;
@@ -1080,7 +1084,7 @@ body {
   transform: rotate(180deg);
 }
 
-@media (min-width: 701px) {
+@media (min-width: 726px) {
   .header__list {
     display: inline-block !important;
   }
@@ -1360,7 +1364,7 @@ body {
   }
 }
 
-@media (max-width: 700px) {
+@media (max-width: 725px) {
   .header__btn {
     display: block;
     cursor: pointer;
@@ -1382,13 +1386,19 @@ body {
     right: 0;
     width: 100%;
     background-color: #fff;
-    padding: 0 10px;
+    -webkit-transform: translateY(18px);
+    -ms-transform: translateY(18px);
+    transform: translateY(18px);
   }
 
   .header__item {
     text-align: center;
     display: block;
     margin-left: 0;
+  }
+
+  .header__item:hover {
+    background-color: wheat;
   }
 
   .header__item + .header__item {
@@ -1402,6 +1412,12 @@ body {
     padding: 10px 0;
   }
 
+  .header__item-link--active {
+    color: white;
+  }
+}
+
+@media (max-width: 700px) {
   .people__title {
     font-size: 32px;
   }

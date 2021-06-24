@@ -1,7 +1,7 @@
 // start media
 
 // start header
-@media (max-width: 700px) {
+@media (max-width: 725px) {
   .header__btn {
     display: block;
     cursor: pointer;
@@ -21,12 +21,16 @@
     right: 0;
     width: 100%;
     background-color: #fff;
-    padding: 0 10px;
+    transform: translateY(18px);
   }
+
   .header__item {
     text-align: center;
     display: block;
     margin-left: 0;
+    &:hover {
+      background-color: wheat;
+    }
   }
   .header__item + .header__item {
     margin-left: 0;
@@ -37,8 +41,14 @@
     border-bottom: 1px solid #40191926;
     padding: 10px 0;
   }
+  .header__item-link--active {
+    color:white;
+    // &::before {
+      
+    // }
+  }
 }
-@media (min-width: 701px) {
+@media (min-width: 726px) {
   .header__list {
     display: inline-block !important;
   }
