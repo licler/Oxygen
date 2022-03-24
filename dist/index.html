@@ -19,13 +19,12 @@
                         <img class="header__logo-images" src="img/logo-header.svg" alt="images">
                     </a>
                 </div>
+                <div class="header__btn">
+                    <div class="header__btn-row"></div>
+                    <div class="header__btn-row"></div>
+                    <div class="header__btn-row"></div>
+                </div>
                 <nav class="header__menu" id="nav">
-                    <div class="header__btn">
-                        <div class="header__btn-row"></div>
-                        <div class="header__btn-row"></div>
-                        <div class="header__btn-row"></div>
-                    </div>
-
                     <ul class="header__list">
                         <li class="header__item"><a class="header__item-link" href="#" data-scroll="#home">HOME</a></li>
                         <li class="header__item"><a class="header__item-link" href="#" data-scroll="#about">ABOUT US</a></li>
@@ -148,8 +147,8 @@
                                 </p>
                             </div>
                         </div>
-                        <div class="expertise__wrapper">
-                            <div class="expertise__media wow animate__animated animate__fadeInDown animate__delay-1s">
+                        <div class="expertise__wrapper wow animate__animated animate__fadeInDown animate__delay-1s">
+                            <div class="expertise__media">
                                 <div class="expertise__media-box">
                                     <img class="expertise__media-images" src="img/content/design.svg" alt="images">
                                 </div>
@@ -164,7 +163,7 @@
                                     </p>
                                 </div>
                             </div>
-                            <div class="expertise__media wow animate__animated animate__fadeInDown animate__delay-2s">
+                            <div class="expertise__media">
                                 <div class="expertise__media-box">
                                     <img class="expertise__media-images" src="img/content/monitor.svg" alt="images">
                                 </div>
@@ -179,7 +178,7 @@
                                     </p>
                                 </div>
                             </div>
-                            <div class="expertise__media wow animate__animated animate__fadeInDown animate__delay-3s">
+                            <div class="expertise__media">
                                 <div class="expertise__media-box">
                                     <img class="expertise__media-images" src="img/content/marketing.svg" alt="images">
                                 </div>
@@ -386,20 +385,20 @@
                         </a>
                     </div>
             </section>
-            <section class="numpage">
+            <section class="numpage wow animate__animated animate__fadeInRight" data-wow-offset="350"">
                 <div class="container">
                     <div class="numpage__items">
                         <div class="numpage__item">
                             <div class="numpage__item-num" data-value="305">
-                                <span>305</span>
+                                305
                             </div>
                             <div class="numpage__item-desc">
                                 Web Designs
                             </div>
                         </div>
                         <div class="numpage__item">
-                            <div class="numpage__item-num" data-value="220">
-                                <span>220</span>
+                            <div class="numpage__item-num " data-value="220">
+                                220
                             </div>
                             <div class="numpage__item-desc">
                                 Logo Designs
@@ -407,7 +406,7 @@
                         </div>
                         <div class="numpage__item">
                             <div class="numpage__item-num" data-value="52">
-                                <span>52</span>
+                                52
                             </div>
                             <div class="numpage__item-desc">
                                 Print Designs
@@ -415,13 +414,14 @@
                         </div>
                         <div class="numpage__item">
                             <div class="numpage__item-num" data-value="88">
-                                <span>88</span>
+                                88
                             </div>
                             <div class="numpage__item-desc">
                                 Mobile Apps
                             </div>
                         </div>
                     </div>
+                    
                 </div>
             </section>
             <section class="people">
@@ -490,7 +490,7 @@
                             <p class="people__text">
                                 The path of the righteous man is beset on all sides by the iniquities of the selfish and
                                 the tyranny of evil men. Blessed is he who, in the name of charity and good will,
-                                shepherds the weak through the valley of darkness, for he is truly his brother’s.
+                                shepherds the weak through the valley of darkness, for he is truly his brother's.
                             </p>
                         </div>
 
@@ -692,5 +692,6 @@
     <script type="text/javascript" src="js/libs.min.js"></script>
     <script src="js/main.min.js"></script>
 </body>
+
 
 </html>

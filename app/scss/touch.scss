@@ -61,6 +61,10 @@
     letter-spacing: 2px;
     font-family: "Montserrat-Bold";
   }
+  .touch__btn:hover {
+    background-color: #97a292;
+    transition: all .3s linear;
+  }
   &__map-inner {
     iframe {
       width: 635px;

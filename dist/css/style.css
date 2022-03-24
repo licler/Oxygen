@@ -1,3 +1,5 @@
+@charset "UTF-8";
+
 @font-face {
   font-family: "Merriweather-Light";
   font-display: swap;
@@ -201,6 +203,14 @@ body {
   letter-spacing: 0.6px;
 }
 
+.header__item:hover a {
+  color: #FCBB08;
+  -webkit-transition: color .3s linear;
+  -o-transition: color .3s linear;
+  transition: color .3s linear;
+  letter-spacing: 5.3px;
+}
+
 .header__btn {
   width: 30px;
   display: none;
@@ -209,19 +219,9 @@ body {
 .header__item-link--active {
   position: relative;
   padding-bottom: 10px;
-}
-
-.header__item-link--active::before {
-  content: "";
-  position: absolute;
-  width: 50px;
-  height: 2px;
-  background-color: #FCBB08;
-  bottom: 0;
-  left: -6px;
-  right: 0;
-  margin: 0 auto;
-  text-align: center;
+  letter-spacing: 5.3px;
+  color: #FCBB08;
+  font-weight: 700;
 }
 
 .previous {
@@ -431,6 +431,7 @@ body {
 
 .letmake__box {
   max-width: 470px;
+  padding: 0 10px;
 }
 
 .portfolio {
@@ -648,7 +649,7 @@ body {
 }
 
 .people__text {
-  max-width: 559px;
+  max-width: 705px;
   color: #777777;
   margin-bottom: 197px;
 }
@@ -981,6 +982,13 @@ body {
   font-family: "Montserrat-Bold";
 }
 
+.touch .touch__btn:hover {
+  background-color: #97a292;
+  -webkit-transition: all .3s linear;
+  -o-transition: all .3s linear;
+  transition: all .3s linear;
+}
+
 .touch__map-inner iframe {
   width: 635px;
   height: 896px;
@@ -1090,6 +1098,18 @@ body {
   }
 }
 
+@media (max-width: 1580px) {
+  .people {
+    padding: 305px 82px 114px;
+  }
+}
+
+@media (max-width: 1440px) {
+  .people {
+    padding: 305px 93px 114px;
+  }
+}
+
 @media (max-width: 1320px) {
   .letmake__inner {
     -ms-flex-wrap: wrap;
@@ -1182,6 +1202,11 @@ body {
     padding: 80px 0;
   }
 
+  .pricing__item:hover {
+    -webkit-box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.08);
+    box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.08);
+  }
+
   .pricing__item {
     padding-right: 20px;
     padding-left: 20px;
@@ -1265,6 +1290,28 @@ body {
   }
 }
 
+@media (max-width: 1025px) {
+  .people {
+    padding: 30px;
+  }
+
+  .people__text {
+    margin-bottom: 53px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .letmake__images {
+    margin: 0 auto;
+  }
+
+  .letmake__inner {
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+  }
+}
+
 @media (max-width: 980px) {
   .portfolio__items {
     display: -webkit-box;
@@ -1283,10 +1330,6 @@ body {
 }
 
 @media (max-width: 860px) {
-  .people {
-    padding: 60px 0;
-  }
-
   .people__text {
     margin: 20px 0px;
     padding: 0 10px;
@@ -1326,15 +1369,24 @@ body {
 
   .people__item {
     margin: 0 auto;
-    padding: 0 20px;
+    padding: 0;
   }
 
   .people__title {
-    font-size: 37px;
+    font-size: 24px;
+    line-height: 30px;
   }
 
   .people__text {
     max-width: 705px;
+  }
+}
+
+@media (max-width: 768px) {
+  .expertise__wrapper {
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
   }
 }
 
@@ -1365,30 +1417,47 @@ body {
 }
 
 @media (max-width: 725px) {
+  body._lock {
+    overflow: hidden;
+    /*  заблокировать прокрутку сайта при открытом меню*/
+  }
+
   .header__btn {
+    width: 30px;
     display: block;
     cursor: pointer;
-    width: 30px;
+    position: absolute;
+    top: 35px;
+    right: 35px;
   }
 
   .header__btn-row {
-    width: 100%;
     background-color: #000;
     height: 4px;
     margin-bottom: 4px;
   }
 
   .header__list {
-    display: none;
+    display: block;
     position: absolute;
-    top: 76px;
+    top: -500px;
     left: 0;
-    right: 0;
     width: 100%;
     background-color: #fff;
     -webkit-transform: translateY(18px);
     -ms-transform: translateY(18px);
     transform: translateY(18px);
+    z-index: 100;
+    -webkit-transition: all 1s;
+    -o-transition: all 1s;
+    transition: all 1s;
+  }
+
+  .header__list.active {
+    -webkit-transition: all .5s;
+    -o-transition: all .5s;
+    transition: all .5s;
+    top: 76px;
   }
 
   .header__item {
@@ -1397,11 +1466,11 @@ body {
     margin-left: 0;
   }
 
-  .header__item:hover {
-    background-color: wheat;
+  .header__item:hover a {
+    color: #FCBB08;
   }
 
-  .header__item + .header__item {
+  .header__item {
     margin-left: 0;
     border-bottom: 1px solid #40191926;
     padding: 10px 0;
@@ -1412,14 +1481,24 @@ body {
     padding: 10px 0;
   }
 
+  .header__item:last-child {
+    border-bottom: none;
+  }
+
   .header__item-link--active {
-    color: white;
+    color: #FCBB08;
+    letter-spacing: 5.3px;
+    font-weight: 700;
+  }
+
+  .header__item-link--active::before {
+    display: none;
   }
 }
 
 @media (max-width: 700px) {
   .people__title {
-    font-size: 32px;
+    font-size: 28px;
   }
 }
 
@@ -1488,9 +1567,16 @@ body {
   }
 }
 
+@media (max-width: 594px) {
+  .people {
+    padding: 30px 10px;
+  }
+}
+
 @media (max-width: 550px) {
   .letmake__content {
     margin-left: 0;
+    padding-left: 20px;
   }
 }
 
@@ -1532,8 +1618,9 @@ body {
 
 @media (max-width: 495px) {
   .people__title {
-    font-size: 26px;
-    line-height: 35px;
+    font-size: 23px;
+    line-height: 33px;
+    margin: 0 5px;
   }
 
   .people__text {
@@ -1557,6 +1644,17 @@ body {
 
   .letmake__title {
     font-size: 35px;
+  }
+}
+
+@media (max-width: 465px) {
+  .people {
+    padding: 30px 5px;
+  }
+
+  .people__title {
+    font-size: 20px;
+    line-height: 30px;
   }
 }
 
@@ -1588,12 +1686,6 @@ body {
   }
 }
 
-@media (max-width: 435px) {
-  .letmake__title {
-    font-size: 30px;
-  }
-}
-
 @media (max-width: 425px) {
   .expertise__title {
     font-size: 35px;
@@ -1602,6 +1694,27 @@ body {
 
   .expertise__item-box {
     width: 300px;
+  }
+
+  .letmake__title {
+    font-size: 30px;
+    padding: 0 30px;
+    text-align: left;
+    margin-bottom: 35px;
+  }
+
+  .letmake__title::before {
+    left: 30px;
+  }
+
+  .letmake__box {
+    width: 100%;
+    max-width: 350px;
+    padding: 0 30px;
+  }
+
+  .letmake__content {
+    padding-left: 87px;
   }
 }
 
@@ -1653,6 +1766,10 @@ body {
   .letmake__title {
     font-size: 24px;
   }
+
+  .letmake__content {
+    padding-left: 99px;
+  }
 }
 
 @media (max-width: 395px) {
@@ -1666,6 +1783,17 @@ body {
   }
 }
 
+@media (max-width: 385px) {
+  .people__text {
+    line-height: 20px;
+  }
+
+  .people__title {
+    font-size: 16px;
+    line-height: 26px;
+  }
+}
+
 @media (max-width: 360px) {
   .previous__title {
     font-size: 60px;
@@ -1673,6 +1801,10 @@ body {
 
   .expertise__item-box {
     width: 250px;
+  }
+
+  .letmake__content {
+    padding-left: 111px;
   }
 
   .pricing__item-cur {

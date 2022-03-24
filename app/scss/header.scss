@@ -9,10 +9,6 @@
   &__logo {
     margin-left: 0px;
   }
-  // &__list {
-  //   display: flex;
-  //   justify-content: space-between;
-  // }
   &__item {
     margin-left: 44px;
     font-size: 12px;
@@ -21,7 +17,13 @@
     display: inline-block;
     letter-spacing: 0.6px;
   }
+  &__item:hover a {
+    color: $line;
+    transition: color .3s linear;
+    letter-spacing: 5.3px;
+  }
 }
+
 .header__btn {
   width: 30px;
   display: none;
@@ -29,18 +31,9 @@
 .header__item-link--active {
   position: relative;
   padding-bottom: 10px;
-  &::before {
-    content: "";
-    position: absolute;
-    width: 50px;
-    height: 2px;
-    background-color: $line;
-    bottom: 0;
-    left: -6px;
-    right: 0;
-    margin: 0 auto;
-    text-align: center;
-  }
+  letter-spacing: 5.3px;
+  color: $line;
+  font-weight: 700;
 }
 
 .previous {
